@@ -1,0 +1,24 @@
+{% extends 'blog/index.html' %}
+{% block content %}
+<div class="container">
+  <form class="" action="" method="post">
+    {% csrf_token %}
+    <p>
+    <label for="id_title" style="color:yellow;">Title:</label>
+    <input type="text" name="title" class="form-control" maxlength="50" required id="id_title">
+
+  </p>
+
+  
+  <p> 
+    <label for="id_desc" style="color:yellow;">Description:</label>
+    <textarea name="desc" cols="40" rows="10" class="form-control" required id="id_desc">
+</textarea>
+        
+  </p>
+  <input type="submit" value="Submit" class="btn btn-info me-2">
+  <a href="{% url 'index' %}" class="btn btn-danger">Go Back</a>
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+body{
+  background: #304830;
+} 
+
+.text{
+  font-size: 1.2rem;
+  font-weight: 550;
+} 
+.atext{
+  text-decoration: none;
+  color: black;
+} 
+.delete{
+  float: right;
+}
+label{
+  color: yellow;
+}
+.modal-footer btn{
+  float: left;
+}
