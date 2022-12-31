@@ -1,1 +1,1 @@
-web gunicorn fccblog.wsgi --log-file -
+web gunicorn fccblog.wsgi.application --log-file -
